@@ -7,11 +7,11 @@ import 'package:flutter_todo_objectbox/presentation/theme/app_theme.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   objectBox = await ObjectBox.create();
-  runApp(const ProviderScope(child: MyApp()));
+  runApp(const ProviderScope(child: TodoApp()));
 }
 
-class MyApp extends ConsumerWidget {
-  const MyApp({super.key});
+class TodoApp extends ConsumerWidget {
+  const TodoApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
